@@ -59,7 +59,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="title">Title</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">SkyNet Image Classification Model</div>', unsafe_allow_html=True)
 st.markdown('<div class="description">Unleash the power of AI . Upload an image and let our state-of-the-art ResNet50 model accurately classify objects and scenes with remarkable precision.</div>', unsafe_allow_html=True)
 
 # Upload image file
@@ -88,7 +88,7 @@ st.markdown("""
 
 if uploaded_file is not None:
     vps_model_client = model.ModelClient()
-    model_id = "<model_id>"
+    model_id = "mdl-0y7fd2id4qr02"
     image = Image.open(uploaded_file)
     
     # Convert the image to base64
